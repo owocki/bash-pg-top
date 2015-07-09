@@ -1,6 +1,6 @@
 # bash-pg-top
 
-A bash port of pg_top.  Run as the `postgres` user on your machine, and make sure to configure the `PORT` if needed.  Press `<enter>` to see the next screen.
+A bash port of pg_top.  Run as the `postgres` user on your machine, and make sure to configure the `PORT` if needed.  
 
 Source of bash script is here: https://github.com/owocki/bash-pg-top/blob/master/pg_top.sh
 
@@ -35,6 +35,14 @@ As you can see,
 * vmstat info in the third
 * the next several lines are the active postgres queries
 * the next several lines are the idle postgres queries
+
+How to use:
+
+* Press `<enter>` to see the next screen.
+* Enter `kill <pid>` and press `<enter>` to kill a process with `pg_cancel_backend()`
+* Enter `hkill <pid>` and press `<enter>` to hard kill a process with `pg_terminate_backend()`
+* Enter `psql` and press `<enter>` to enter psql command line.
+* Enter `exit` and press `<enter>` to exit `bash_pg_top`.
 
 <!-- Google Analytics --> 
 <img src='https://ga-beacon.appspot.com/UA-1014419-15/owocki/bash-pg-top' style='width:1px; height:1px;' >
